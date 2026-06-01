@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.task-input {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.task-input input {
+  width: 350px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-input button:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 320px;
+  min-height: 500px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.column h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.task-card {
+  background: #f8fafc;
+  border-left: 6px solid #4f46e5;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.task-card p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.task-card button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.task-card button:first-of-type {
+  background: #22c55e;
+  color: white;
+}
+
+.task-card button:first-of-type:hover {
+  background: #16a34a;
+}
+
+.task-card button:last-of-type {
+  background: #ef4444;
+  color: white;
+}
+
+.task-card button:last-of-type:hover {
+  background: #dc2626;
+}
+
+.column:nth-child(1) {
+  border-top: 6px solid #f59e0b;
+}
+
+.column:nth-child(2) {
+  border-top: 6px solid #3b82f6;
+}
+
+.column:nth-child(3) {
+  border-top: 6px solid #22c55e;
+}
